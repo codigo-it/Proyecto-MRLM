@@ -8,16 +8,19 @@ import sqlaccess
 from position import Position
 #import Queue
 
+# Create log file
+LOGFILE = open("log.txt", "w")
 
 # Create a TCP/IP socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setblocking(0)
 
 # Bind the socket to the port
-server_address = ('192.168.1.30', 10000)
+server_address = ('192.168.1.20', 10000)
 
 try:
-    print('starting up on %s port %s', server_address[0], server_address[1], file=stdout)
+    print('starting up on %s port %s'.format(server_address[0], server_address[1]), file=stdout)
+    print('starting up on %s port %s'.format(server_address[0], server_address[1]), file=LOGFILE)
     server.bind(server_address)
 except socket.error as err:
     print("Hubo error, el cual fue \n %s", str(err), file=stderr)
@@ -37,6 +40,7 @@ outputs = []
 while inputs:
     # Wait for at least one of the sockets to be ready for processing
     print('\nEsperando el siguiente evento', file=stdout)
+    print('\nEsperando el siguiente evento', file=LOGFILE)
     readable, writable, exceptional = select.select(inputs, outputs, inputs)
 
     # Handle inputs
@@ -46,10 +50,12 @@ while inputs:
             try:
                 connection, client_address = s.accept()
                 print('new connection from', client_address, file=stdout)
+                print('new connection from', client_address, file=LOGFILE)
                 connection.setblocking(0)
                 inputs.append(connection)
             except socket.error as err:
                 print("Error al aceptar socket legible. El error fue \n%s", str(err), file=stderr)
+                print("Error al aceptar socket legible. El error fue \n%s", str(err), file=LOGFILE)
 
             # Give the connection a queue for data we want to send
             #message_queues[connection] = Queue.Queue()
@@ -61,6 +67,7 @@ while inputs:
                 if data:
                     # A readable client socket has data
                     print('received "%s" from %s' % (data, s.getpeername()), file=stdout)
+                    print('received "%s" from %s' % (data, s.getpeername()), file=LOGFILE)
 
                     currentPosition = Position()
                     if not currentPosition.parse_message_to_data(str(data)):
@@ -68,7 +75,7 @@ while inputs:
                             dbconnector = sqlaccess.DBConnection('root', '', '127.0.0.1', 'gps_db')
                             dbconnector.connect()
                             sqlstring = currentPosition.sql_position_insertion()
-                            print(sqlstring)
+                            print(sqlstring,file=LOGFILE)
                             dbconnector.execute_sql(sqlstring)
                         except RuntimeError:
                             print("Error insertando posicion en SQL")

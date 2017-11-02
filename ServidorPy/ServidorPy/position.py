@@ -14,6 +14,7 @@ class Position:
         """
         self.protocol = None
         self.deviceid = None
+        self.deviceuniqueid = None
         self.servertime = None
         self.devicetime = None
         self.fixtime = None
@@ -26,6 +27,17 @@ class Position:
         self.address = None
         self.attributes = None
         self.accuracy = None
+
+    def check_device_unique_id(self):
+        """Busca el deviceid correspondiente al deviceuniqueid recibido"""
+
+        if self.deviceuniqueid == 327032:
+            self.deviceid = 1
+        elif self.deviceuniqueid == 123456:
+            self.deviceid = 3
+        else:
+            self.deviceid = 0
+
 
     def parse_message_to_data(self, message):
         """Lee el mensaje del cliente trxxxar y guarda la info en el objeto 'position'"""
@@ -54,7 +66,8 @@ class Position:
         #Quinto parse con revision de tipo correcto.
         try:
             self.protocol = 'osmand'
-            self.deviceid = int(sp3[0])
+            self.deviceuniqueid = int(sp3[0])
+            self.check_device_unique_id()
             self.servertime = time.gmtime()
             self.devicetime = time.localtime(int(sp3[1]))
             self.fixtime = self.devicetime
@@ -75,16 +88,15 @@ class Position:
     def sql_position_insertion(self):
         """Genera la string sql para enviar al ejecutor
         """
-        string = "INSERT INTO `positions` (`id`, `protocol`, `deviceid`, `servertime`, "\
-                 "`devicetime`, `fixtime`, `valid`, `latitude`, `longitude`, `altitude`, "\
+        string = "INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, "\
+                 "`devicetime`, `valid`, `latitude`, `longitude`, `altitude`, "\
                  "`speed`, `course`, `address`, `attributes`, `accuracy`, `network`) "\
-                 "VALUES (\" \", '{}', {}, '{}', '{}', '{}', {}, {}, {}, {}, {}, {}, '{}', "\
+                 "VALUES ('{}', {}, '{}', '{}', {}, {}, {}, {}, {}, {}, '{}', "\
                  "'{}', {}, 'null')" \
         .format(self.protocol,\
         str(self.deviceid),\
         time.strftime("%Y-%m-%d %H:%M:%S", self.servertime),\
         time.strftime("%Y-%m-%d %H:%M:%S", self.devicetime),\
-        time.strftime("%Y-%m-%d %H:%M:%S", self.fixtime),\
         self.valid,\
         str(self.latitude),\
         str(self.longitude),\

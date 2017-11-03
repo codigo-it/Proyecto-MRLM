@@ -6,7 +6,12 @@ from mysql.connector import errorcode
 class DBConnection:
     """Clase para usar el python-MySQL connector """
 
-    def __init__(self, user='root', password='', hostIP='127.0.0.1', dbname='none', autocommit = True):
+    def __init__(self,
+                 user='root',
+                 password='',
+                 hostIP='127.0.0.1',
+                 dbname='none',
+                 autocommit=True):
         """Constructor inicializa los atributos basicos"""
         self.user = user
         self.password = password
@@ -19,7 +24,10 @@ class DBConnection:
         """Establecer conexion con el servidor mysql"""
 
         try:
-            self.cnx = mysql.connector.connect(user = self.user, password = self.password, host = self.host_ip, autocommit = self.autocommit)
+            self.cnx = mysql.connector.connect(user = self.user, 
+                                               password = self.password, 
+                                               host = self.host_ip, 
+                                               autocommit = self.autocommit)
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print("Problemas con nombre de usuario o contraseña")

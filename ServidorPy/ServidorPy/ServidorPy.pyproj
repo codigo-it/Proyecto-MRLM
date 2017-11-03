@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>30e24912-a27e-492f-9baa-f55ee43488bb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ServidorPy.py</StartupFile>
+    <StartupFile>TestThreads.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,12 +22,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="module1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="position.py" />
     <Compile Include="ServidorPy.py" />
     <Compile Include="sqlaccess.py" />
+    <Compile Include="TestThreads.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.4" />

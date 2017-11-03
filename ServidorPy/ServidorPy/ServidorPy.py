@@ -19,8 +19,8 @@ server.setblocking(0)
 server_address = ('192.168.1.20', 10000)
 
 try:
-    print('starting up on %s port %s'.format(server_address[0], server_address[1]), file=stdout)
-    print('starting up on %s port %s'.format(server_address[0], server_address[1]), file=LOGFILE)
+    print('starting up on {} port {}'.format(server_address[0], server_address[1]), file=stdout)
+    print('starting up on {} port {}'.format(server_address[0], server_address[1]), file=LOGFILE)
     server.bind(server_address)
 except socket.error as err:
     print("Hubo error, el cual fue \n %s", str(err), file=stderr)
@@ -75,7 +75,7 @@ while inputs:
                             dbconnector = sqlaccess.DBConnection('root', '', '127.0.0.1', 'gps_db')
                             dbconnector.connect()
                             sqlstring = currentPosition.sql_position_insertion()
-                            print(sqlstring,file=LOGFILE)
+                            print(sqlstring, file=LOGFILE)
                             dbconnector.execute_sql(sqlstring)
                         except RuntimeError:
                             print("Error insertando posicion en SQL")

@@ -1,5 +1,5 @@
 """Modulo que contiene la clase dbConnection para acceder a database mysql"""
-
+import logging
 import mysql.connector
 from mysql.connector import errorcode
 
@@ -13,6 +13,7 @@ class DBConnection:
                  dbname='none',
                  autocommit=True):
         """Constructor inicializa los atributos basicos"""
+        self.logger = logging.getLogger()
         self.user = user
         self.password = password
         self.host_ip = hostIP
@@ -24,17 +25,17 @@ class DBConnection:
         """Establecer conexion con el servidor mysql"""
 
         try:
-            self.cnx = mysql.connector.connect(user = self.user, 
-                                               password = self.password, 
-                                               host = self.host_ip, 
-                                               autocommit = self.autocommit)
+            self.cnx = mysql.connector.connect(user=self.user,
+                                               password=self.password,
+                                               host=self.host_ip,
+                                               autocommit=self.autocommit)
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-                print("Problemas con nombre de usuario o contraseña")
+                self.logger.error("Problemas con nombre de usuario o contraseña")
             elif err.errno == errorcode.ER_BAD_DB_ERROR:
-                print("Database no existe")
+                self.logger.error("Database no existe")
             else:
-                print("Error al conectar a DB.\nInfo:\n{}".format(err))
+                self.logger.error("Error al conectar a DB.\nInfo:\n{}".format(err))
                 self.cnx.close()
                 return 1
         if self.dbname != 'none':
@@ -48,7 +49,7 @@ class DBConnection:
         try:
             cursor.execute("CREATE DATABASE {} DEFAULT CHARACTER SET 'utf8'".format(self.dbname))
         except mysql.connector.Error as err:
-            print("No se pudo crear DB. Info:\n{}".format(err))
+            self.logger.error("No se pudo crear DB. Info:\n{}".format(err))
         else:
             cursor.close()
 
@@ -82,16 +83,18 @@ class DBConnection:
             cursor.execute(statement1)
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
-                print("La tabla ya existe")
+                self.logger.error("La tabla ya existe")
             else:
-                print(err.msg)
+                self.logger.error(err.msg)
 
     def execute_sql(self, sqlstring):
         """Ejecuta statements SQL"""
 
-        print("String SQL a ejecutar\n{}".format(sqlstring))
+        self.logger.info("String SQL a ejecutar\n{}".format(sqlstring))
         cursor = self.cnx.cursor()
         try:
             cursor.execute(sqlstring)
         except RuntimeError:
-            print("Error de ejecucion de string SQL")
+            self.logger.error("Error de ejecucion de string SQL")
+        else:
+            cursor.close()

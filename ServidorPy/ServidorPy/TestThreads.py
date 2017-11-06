@@ -2,14 +2,13 @@
 Se pretende leer desde teclado sin perjuicio de actualizar la informacion en consola/pantalla.
 Para esto se probara usar pygame. Anteriormente se usó un thread extra con sys.stdin.read(1)
 pero esto impide refrescar la consola hasta presionar Enter."""
+
 import sys
 import threading
 import time
 import queue
 import pygame
 from pygame.locals import *
-
-
 
 def add_input(input_queue):
     """Funcion a ejecutar en nuevo thread, que maneje teclado y quizas pantalla/consola"""
@@ -38,9 +37,7 @@ def add_input(input_queue):
         keys = pygame.key.get_pressed()
         if keys[K_ESCAPE]:
             done = True
-
-    #while True:
-    #input_queue.put(sys.stdin.read(1))
+            input_queue.put("ESC presionado en hilo 2")
 
 def foobar():
     input_queue = queue.Queue()
@@ -53,10 +50,14 @@ def foobar():
     while True:
 
         if time.time()-last_update > 0.5:
-            sys.stdout.write(".")
+            print(".")
             last_update = time.time()
 
         if not input_queue.empty():
-            print("\ninput:{}".format(input_queue.get()))
+            print("{}\nEscribe algo".format(input_queue.get()))
+            user_input = input()
+            print("Escribiste: {}\nSaliendo...".format(user_input))
+            break
+            
 
 foobar()

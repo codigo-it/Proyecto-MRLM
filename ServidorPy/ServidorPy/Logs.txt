@@ -1,0 +1,348 @@
+[INFO][2017-11-06 14:34:44,067][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 14:34:44,069][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:36:51,789][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:36:51,811][ServidorPy][<module>]received "b'POST /?id=123456&timestamp=1509989811&lat=-33.46429166666667&lon=-70.65030166666666&speed=9.420081588495254&bearing=236.47999572753906&altitude=566.1&accuracy=236.47999572753906&batt=72.0 HTTP/1.1\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 5.1; LG-X220 Build/LMY47I)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.50', 33754)
+[INFO][2017-11-06 14:36:51,812][position][parse_message_to_data]Mensaje desde 123456 parseado
+[INFO][2017-11-06 14:36:51,871][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 3, '2017-11-06 17:36:51', '2017-11-06 14:36:51', 1, -33.46429166666667, -70.65030166666666, 566.1, 9.420081588495254, 236.47999572753906, 'Good question', 'Another good question', 236.47999572753906, 'null')
+[INFO][2017-11-06 14:36:51,964][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:42:44,943][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:42:44,945][ServidorPy][<module>]received "b'POST /?id=123456&timestamp=1509989811&lat=-33.46429166666667&lon=-70.65030166666666&speed=9.420081588495254&bearing=236.47999572753906&altitude=566.1&accuracy=236.47999572753906&batt=72.0 HTTP/1.1\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 5.1; LG-X220 Build/LMY47I)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.50', 37024)
+[INFO][2017-11-06 14:42:44,946][position][parse_message_to_data]Mensaje desde 123456 parseado
+[INFO][2017-11-06 14:42:44,994][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 3, '2017-11-06 17:42:44', '2017-11-06 14:36:51', 1, -33.46429166666667, -70.65030166666666, 566.1, 9.420081588495254, 236.47999572753906, 'Good question', 'Another good question', 236.47999572753906, 'null')
+[INFO][2017-11-06 14:42:45,087][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:47:23,250][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 14:47:23,252][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:25,100][ServidorPy][<module>]new connection from ('192.168.1.73', 52332)
+[INFO][2017-11-06 14:53:25,104][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:25,106][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 52332)
+[INFO][2017-11-06 14:53:25,107][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:53:25,161][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:53:25', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:53:25,211][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:28,247][ServidorPy][<module>]new connection from ('192.168.1.73', 40369)
+[INFO][2017-11-06 14:53:28,248][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:28,250][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 40369)
+[INFO][2017-11-06 14:53:28,251][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:53:28,273][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:53:28', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:53:28,322][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:35,654][ServidorPy][<module>]new connection from ('192.168.1.73', 56531)
+[INFO][2017-11-06 14:53:35,656][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:35,659][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 56531)
+[INFO][2017-11-06 14:53:35,660][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:53:35,667][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:53:35', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:53:35,750][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:55,238][ServidorPy][<module>]new connection from ('192.168.1.73', 33787)
+[INFO][2017-11-06 14:53:55,240][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:53:55,243][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 33787)
+[INFO][2017-11-06 14:53:55,244][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:53:55,250][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:53:55', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:53:55,332][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:57:01,990][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 14:57:01,992][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:57:03,520][ServidorPy][<module>]new connection from ('192.168.1.73', 33088)
+[INFO][2017-11-06 14:57:03,524][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:57:03,527][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 33088)
+[INFO][2017-11-06 14:57:03,528][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:57:03,554][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:57:03', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:57:03,605][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:57:21,032][ServidorPy][<module>]new connection from ('192.168.1.73', 44556)
+[INFO][2017-11-06 14:57:21,033][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:57:21,035][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 44556)
+[INFO][2017-11-06 14:57:21,036][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:57:21,043][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:57:21', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:57:21,138][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:02,713][ServidorPy][<module>]new connection from ('192.168.1.73', 55492)
+[INFO][2017-11-06 14:58:02,715][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:02,718][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 55492)
+[INFO][2017-11-06 14:58:02,719][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:58:02,725][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:58:02', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:58:02,805][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:02,821][ServidorPy][<module>]new connection from ('192.168.1.73', 47581)
+[INFO][2017-11-06 14:58:02,823][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:02,826][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 47581)
+[INFO][2017-11-06 14:58:02,827][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:58:02,834][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:58:02', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:58:02,872][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:39,148][ServidorPy][<module>]new connection from ('192.168.1.73', 49441)
+[INFO][2017-11-06 14:58:39,150][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:58:39,152][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 49441)
+[INFO][2017-11-06 14:58:39,154][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:58:39,160][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:58:39', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:58:39,272][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:08,743][ServidorPy][<module>]new connection from ('192.168.1.73', 46058)
+[INFO][2017-11-06 14:59:08,745][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:08,747][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 46058)
+[INFO][2017-11-06 14:59:08,748][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:59:08,755][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:59:08', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:59:08,847][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:08,858][ServidorPy][<module>]new connection from ('192.168.1.73', 45626)
+[INFO][2017-11-06 14:59:08,860][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:08,863][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 45626)
+[INFO][2017-11-06 14:59:08,864][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:59:08,870][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:59:08', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:59:08,899][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:23,003][ServidorPy][<module>]new connection from ('192.168.1.73', 35444)
+[INFO][2017-11-06 14:59:23,005][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:23,007][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 35444)
+[INFO][2017-11-06 14:59:23,008][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:59:23,014][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:59:23', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:59:23,104][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:45,152][ServidorPy][<module>]new connection from ('192.168.1.73', 35252)
+[INFO][2017-11-06 14:59:45,154][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:45,156][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 35252)
+[INFO][2017-11-06 14:59:45,157][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:59:45,164][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:59:45', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:59:45,243][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:45,255][ServidorPy][<module>]new connection from ('192.168.1.73', 33322)
+[INFO][2017-11-06 14:59:45,258][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 14:59:45,260][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 33322)
+[INFO][2017-11-06 14:59:45,262][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 14:59:45,268][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 17:59:45', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 14:59:45,296][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:03,815][ServidorPy][<module>]new connection from ('192.168.1.73', 47672)
+[INFO][2017-11-06 15:00:03,817][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:03,819][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 47672)
+[INFO][2017-11-06 15:00:03,820][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:00:03,826][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:00:03', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:00:03,908][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:21,238][ServidorPy][<module>]new connection from ('192.168.1.73', 40932)
+[INFO][2017-11-06 15:00:21,241][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:21,244][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 40932)
+[INFO][2017-11-06 15:00:21,246][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:00:21,254][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:00:21', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:00:21,331][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:21,344][ServidorPy][<module>]new connection from ('192.168.1.73', 53736)
+[INFO][2017-11-06 15:00:21,347][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:21,350][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 53736)
+[INFO][2017-11-06 15:00:21,351][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:00:21,357][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:00:21', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:00:21,398][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:33,946][ServidorPy][<module>]new connection from ('192.168.1.73', 35391)
+[INFO][2017-11-06 15:00:33,948][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:00:33,950][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 35391)
+[INFO][2017-11-06 15:00:33,951][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:00:33,958][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:00:33', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:00:34,029][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:01:14,141][ServidorPy][<module>]new connection from ('192.168.1.73', 52958)
+[INFO][2017-11-06 15:01:14,143][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:01:14,145][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 52958)
+[INFO][2017-11-06 15:01:14,147][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:01:14,153][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:01:14', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:01:14,256][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:01:14,267][ServidorPy][<module>]new connection from ('192.168.1.73', 55942)
+[INFO][2017-11-06 15:01:14,270][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:01:14,272][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 55942)
+[INFO][2017-11-06 15:01:14,273][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:01:14,279][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:01:14', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:01:14,307][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:01:40,353][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:01:40,355][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:02:28,603][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:02:28,605][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:02:30,263][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:02:30,265][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 58342)
+[INFO][2017-11-06 15:02:30,267][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:02:30,280][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:02:30', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:02:30,392][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:02:36,549][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:02:36,552][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 49572)
+[INFO][2017-11-06 15:02:36,553][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:02:36,559][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:02:36', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:02:36,669][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:03:15,163][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:03:15,165][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:03:27,103][ServidorPy][<module>]new connection from ('192.168.1.73', 42858)
+[INFO][2017-11-06 15:03:27,105][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:03:27,107][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 42858)
+[INFO][2017-11-06 15:03:27,108][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:03:27,121][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:03:27', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:03:27,236][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:03:40,270][ServidorPy][<module>]new connection from ('192.168.1.73', 34925)
+[INFO][2017-11-06 15:03:40,272][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:03:40,274][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 34925)
+[INFO][2017-11-06 15:03:40,275][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:03:40,282][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:03:40', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:03:40,386][ServidorPy][<module>]
+Esperando el siguiente evento
+[INFO][2017-11-06 15:19:33,223][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:19:33,228][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:19:34,500][ServidorPy][<module>]new connection from ('192.168.1.73', 32954)
+[INFO][2017-11-06 15:19:34,503][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:19:34,504][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 32954)
+[INFO][2017-11-06 15:19:34,506][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:19:34,519][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:19:34', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:19:34,569][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:19:46,394][ServidorPy][<module>]new connection from ('192.168.1.73', 48210)
+[INFO][2017-11-06 15:19:46,397][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:19:46,399][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 48210)
+[INFO][2017-11-06 15:19:46,400][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:19:46,407][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:19:46', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:19:46,524][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:05,740][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:20:05,743][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:08,449][ServidorPy][<module>]new connection from ('192.168.1.73', 35855)
+[INFO][2017-11-06 15:20:08,450][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:08,452][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 35855)
+[INFO][2017-11-06 15:20:08,454][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:20:08,467][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:20:08', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:20:08,552][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:08,562][ServidorPy][<module>]new connection from ('192.168.1.73', 51376)
+[INFO][2017-11-06 15:20:08,565][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:08,567][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 51376)
+[INFO][2017-11-06 15:20:08,568][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:20:08,575][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:20:08', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:20:08,604][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:16,549][ServidorPy][<module>]new connection from ('192.168.1.73', 55656)
+[INFO][2017-11-06 15:20:16,551][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:16,554][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 55656)
+[INFO][2017-11-06 15:20:16,555][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:20:16,562][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:20:16', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:20:16,644][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:16,997][ServidorPy][<module>]new connection from ('192.168.1.50', 44762)
+[INFO][2017-11-06 15:20:16,999][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:20:17,001][ServidorPy][<module>]received "b'POST /?id=123456&timestamp=1509989811&lat=-33.46429166666667&lon=-70.65030166666666&speed=9.420081588495254&bearing=236.47999572753906&altitude=566.1&accuracy=236.47999572753906&batt=72.0 HTTP/1.1\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 5.1; LG-X220 Build/LMY47I)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.50', 44762)
+[INFO][2017-11-06 15:20:17,003][position][parse_message_to_data]Mensaje desde 123456 parseado
+[INFO][2017-11-06 15:20:17,010][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 3, '2017-11-06 18:20:17', '2017-11-06 14:36:51', 1, -33.46429166666667, -70.65030166666666, 566.1, 9.420081588495254, 236.47999572753906, 'Good question', 'Another good question', 236.47999572753906, 'null')
+[INFO][2017-11-06 15:20:17,066][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:00,620][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:21:00,624][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:00,688][ServidorPy][<module>]new connection from ('192.168.1.73', 39856)
+[INFO][2017-11-06 15:21:00,695][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:00,698][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 39856)
+[INFO][2017-11-06 15:21:00,700][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:21:00,715][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:21:00', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:21:00,900][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:00,910][ServidorPy][<module>]new connection from ('192.168.1.73', 54622)
+[INFO][2017-11-06 15:21:00,946][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:00,970][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 54622)
+[INFO][2017-11-06 15:21:00,971][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:21:00,982][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:21:00', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:21:01,065][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:21:23,676][ServidorPy][<module>]new connection from ('192.168.1.73', 33006)
+[INFO][2017-11-06 15:21:23,677][ServidorPy][<module>]Apagando servidor
+[INFO][2017-11-06 15:22:50,928][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:22:50,932][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:22:53,270][ServidorPy][<module>]new connection from ('192.168.1.73', 43419)
+[INFO][2017-11-06 15:22:53,311][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:22:53,352][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 43419)
+[INFO][2017-11-06 15:22:53,358][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:22:53,453][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:22:53', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:22:53,562][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:01,195][ServidorPy][<module>]new connection from ('192.168.1.73', 54774)
+[INFO][2017-11-06 15:23:05,604][ServidorPy][<module>]Apagando servidor
+[INFO][2017-11-06 15:23:29,790][ServidorPy][<module>]starting up on 192.168.1.20 port 10000
+[INFO][2017-11-06 15:23:29,794][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:31,278][ServidorPy][<module>]new connection from ('192.168.1.73', 40315)
+[INFO][2017-11-06 15:23:31,314][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:31,349][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 40315)
+[INFO][2017-11-06 15:23:31,354][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:23:31,404][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:23:31', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:23:31,509][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:31,524][ServidorPy][<module>]new connection from ('192.168.1.73', 34616)
+[INFO][2017-11-06 15:23:31,560][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:31,600][ServidorPy][<module>]received "b'POST /?id=327032&timestamp=1509397504&lat=-33.4646873&lon=-70.6506042&speed=0.4470840991448164&bearing=112.774658203125&altitude=575.4099731445313&accuracy=112.774658203125&batt=100.0 HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G610M Build/MMB29K)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.73', 34616)
+[INFO][2017-11-06 15:23:31,606][position][parse_message_to_data]Mensaje desde 327032 parseado
+[INFO][2017-11-06 15:23:31,679][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 1, '2017-11-06 18:23:31', '2017-10-30 18:05:04', 1, -33.4646873, -70.6506042, 575.4099731445312, 0.4470840991448164, 112.774658203125, 'Good question', 'Another good question', 112.774658203125, 'null')
+[INFO][2017-11-06 15:23:31,765][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:35,077][ServidorPy][<module>]new connection from ('192.168.1.50', 37385)
+[INFO][2017-11-06 15:23:35,118][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:35,155][ServidorPy][<module>]received "b'POST /?id=123456&timestamp=1509989811&lat=-33.46429166666667&lon=-70.65030166666666&speed=9.420081588495254&bearing=236.47999572753906&altitude=566.1&accuracy=236.47999572753906&batt=72.0 HTTP/1.1\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 5.1; LG-X220 Build/LMY47I)\r\nHost: 192.168.1.20:10000\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 0\r\n\r\n'" from ('192.168.1.50', 37385)
+[INFO][2017-11-06 15:23:35,161][position][parse_message_to_data]Mensaje desde 123456 parseado
+[INFO][2017-11-06 15:23:35,228][sqlaccess][execute_sql]String SQL a ejecutar
+INSERT INTO `positions` (`protocol`, `deviceid`, `servertime`, `devicetime`, `valid`, `latitude`, `longitude`, `altitude`, `speed`, `course`, `address`, `attributes`, `accuracy`, `network`) VALUES ('osmand', 3, '2017-11-06 18:23:35', '2017-11-06 14:36:51', 1, -33.46429166666667, -70.65030166666666, 566.1, 9.420081588495254, 236.47999572753906, 'Good question', 'Another good question', 236.47999572753906, 'null')
+[INFO][2017-11-06 15:23:35,366][ServidorPy][<module>]Esperando el siguiente evento
+[INFO][2017-11-06 15:23:44,168][ServidorPy][<module>]new connection from ('192.168.1.73', 55351)
+[INFO][2017-11-06 15:23:44,169][ServidorPy][<module>]Apagando servidor

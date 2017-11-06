@@ -1,7 +1,7 @@
 """Modulo que contiene la clase position
 """
 import time
-
+import logging
 
 class Position:
     """Clase que guarda la info de posiciones recibidas"""
@@ -12,6 +12,7 @@ class Position:
     def __init__(self):
         """Constructor
         """
+        self.logger = logging.getLogger()
         self.protocol = None
         self.deviceid = None
         self.deviceuniqueid = None
@@ -48,7 +49,7 @@ class Position:
             #Segundo parse para quitar mensaje inutil.
             sp2 = sp1[2].partition(" ")
         else:
-            print("Parse inicial malo")
+            self.logger.error("Parse inicial malo")
             return 1
 
         #Tercer parse para obtener los pares 'nombre=atributo'.
@@ -60,7 +61,7 @@ class Position:
                 aux = sp3[i].partition("=")
                 sp3[i] = aux[2]
         else:
-            print("Parse n3 malo")
+            self.logger.error("Parse n3 malo")
             return 1
 
         #Quinto parse con revision de tipo correcto.
@@ -81,8 +82,9 @@ class Position:
             self.attributes = 'Another good question'
             self.accuracy = float(sp3[7])
         except OSError:
-            print("Excepcion en parse de atributos")
+            self.logger.error("Excepcion en parse de atributos")
             return 1
+        self.logger.info("Mensaje desde {} parseado".format(self.deviceuniqueid))
         return 0
 
     def sql_position_insertion(self):
